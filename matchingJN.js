@@ -32,5 +32,6 @@ console.log(isMatching("{}")) // returns true
 console.log(isMatching("{()}")) // returns true
 console.log(isMatching("{abcde}")) // returns true
 console.log(isMatching("")) // returns true, since there is no closing bracket missing an open bracket
+console.log(isMatching("(['*&^%")) // returns true, since there are no open or closed  brackets
 console.log(isMatching("}{")) // returns false, no open bracket before closed bracket
 console.log(isMatching("{{}")) // returns false, no closed bracket for second open bracket
